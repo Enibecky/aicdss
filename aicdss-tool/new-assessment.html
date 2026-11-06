@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New assessment | AI-CDSS Transparency Assessment Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" data-app-header></header>
+  <main id="main" class="app-main">
+    <div class="container" style="max-width:860px">
+      <div id="demo-slot"></div>
+      <div class="page-head">
+        <div>
+          <h1 style="font-size:2rem">New assessment</h1>
+          <p>Tell us about the AI-CDSS you are assessing.</p>
+        </div>
+      </div>
+      <form class="panel" id="new-form" novalidate>
+        <div class="form-grid">
+          <div class="field" id="f-institution">
+            <label for="institution_name">Institution name</label>
+            <input id="institution_name" name="institution_name" autocomplete="organization" required aria-describedby="institution-error">
+            <p class="error-text" id="institution-error">Enter the name of your institution.</p>
+          </div>
+          <div class="field" id="f-system">
+            <label for="ai_cdss_name">Name of the AI-CDSS</label>
+            <input id="ai_cdss_name" name="ai_cdss_name" required aria-describedby="system-error">
+            <p class="error-text" id="system-error">Enter the name of the system.</p>
+          </div>
+          <div class="field full">
+            <label for="vendor">Vendor or developer</label>
+            <input id="vendor" name="vendor">
+          </div>
+          <div class="field full">
+            <label for="intended_use">Intended use</label>
+            <p class="hint">For example: "Supports radiologists in detecting tuberculosis on chest X-rays."</p>
+            <textarea id="intended_use" name="intended_use"></textarea>
+          </div>
+          <fieldset class="field full" id="f-stage" aria-describedby="stage-error">
+            <legend>Assessment stage</legend>
+            <div class="choice-row">
+              <label class="choice"><input type="radio" name="stage" value="pre-adoption"><span class="radio"></span><span><strong>Before adoption</strong><span class="small">The institution is considering this system.</span></span></label>
+              <label class="choice"><input type="radio" name="stage" value="in-use"><span class="radio"></span><span><strong>While in use</strong><span class="small">The system is already used in the institution.</span></span></label>
+            </div>
+            <p class="error-text" id="stage-error">Choose the stage of the assessment.</p>
+          </fieldset>
+        </div>
+        <div class="form-actions">
+          <a class="btn btn-secondary" href="dashboard.html">Cancel</a>
+          <button class="btn btn-primary" type="submit" id="start-btn">Start assessment <span data-icon="arrowRight"></span></button>
+        </div>
+        <p class="form-message error" id="new-message" role="alert"></p>
+      </form>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/new-assessment.js"></script>
+</body>
+</html>

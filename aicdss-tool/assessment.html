@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assessment | AI-CDSS Transparency Assessment Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" data-app-header></header>
+  <main id="main" class="app-main">
+    <div class="container">
+      <div id="demo-slot"></div>
+      <div class="assess-layout">
+        <aside class="panel assess-side" aria-label="Assessment details and progress">
+          <h3 id="side-system">Assessment</h3>
+          <ul class="meta-list" id="side-meta"></ul>
+          <div class="progress" role="progressbar" aria-label="Questions answered" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" id="progress"><div class="progress-bar" id="progress-bar"></div></div>
+          <p class="progress-text" id="progress-text">0 answered</p>
+          <div class="q-dots" id="q-dots" aria-label="Jump to a question"></div>
+        </aside>
+        <section class="panel q-card" aria-live="polite">
+          <div id="q-area"><p class="empty">Loading questions…</p></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/assessment.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My assessments | AI-CDSS Transparency Assessment Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" data-app-header></header>
+  <main id="main" class="app-main">
+    <div class="container">
+      <div id="demo-slot"></div>
+      <div class="page-head">
+        <div>
+          <h1 style="font-size:2rem">My assessments</h1>
+          <p>Start a new assessment or reopen a saved one.</p>
+        </div>
+        <a class="btn btn-primary" href="new-assessment.html"><span data-icon="plus"></span>New assessment</a>
+      </div>
+      <div class="summary-row">
+        <div class="summary"><strong id="s-total">0</strong><span>Assessments</span></div>
+        <div class="summary"><strong id="s-done">0</strong><span>Completed</span></div>
+        <div class="summary"><strong id="s-progress">0</strong><span>In progress</span></div>
+      </div>
+      <div class="panel">
+        <div id="list" aria-live="polite"><p class="empty">Loading your assessments…</p></div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | AI-CDSS Transparency Assessment Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header" data-app-header></header>
+  <main id="main" class="app-main">
+    <div class="container">
+      <div class="auth-wrap">
+        <div class="auth-side">
+          <div>
+            <h2>Assess the transparency of an AI-CDSS</h2>
+            <p>Create an account to carry out assessments and keep your reports in one place.</p>
+          </div>
+          <ul>
+            <li><span data-icon="check"></span>Plain-language questions, no AI expertise needed</li>
+            <li><span data-icon="check"></span>Governance gaps with practical guidance</li>
+            <li><span data-icon="check"></span>Repeat assessments while the system is in use</li>
+            <li><span data-icon="lock"></span>No patient data is collected</li>
+          </ul>
+        </div>
+        <div class="auth-form">
+          <div id="demo-slot"></div>
+          <div class="tabs" role="tablist" aria-label="Account">
+            <button class="tab" role="tab" id="tab-login" aria-selected="true" aria-controls="auth-panel" type="button" data-mode="login">Log in</button>
+            <button class="tab" role="tab" id="tab-register" aria-selected="false" aria-controls="auth-panel" type="button" data-mode="register">Create account</button>
+          </div>
+          <form id="auth-panel" role="tabpanel" aria-labelledby="tab-login" novalidate>
+            <h1 id="auth-title" style="font-size:1.6rem">Welcome back</h1>
+            <p id="auth-intro" style="color:var(--color-muted)">Log in to continue your assessments.</p>
+            <div class="field" id="f-email">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <p class="error-text" id="email-error">Enter a valid email address.</p>
+            </div>
+            <div class="field" id="f-password">
+              <label for="password">Password</label>
+              <p class="hint" id="password-hint" hidden>At least 6 characters.</p>
+              <input id="password" name="password" type="password" autocomplete="current-password" minlength="6" required aria-describedby="password-error">
+              <p class="error-text" id="password-error">Your password must be at least 6 characters.</p>
+            </div>
+            <button class="btn btn-primary" type="submit" id="auth-submit">Log in</button>
+            <p class="form-message" id="auth-message" role="alert" aria-live="assertive"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

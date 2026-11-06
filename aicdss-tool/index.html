@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI-CDSS Transparency Assessment Tool</title>
+  <meta name="description" content="A governance tool that helps Nigerian healthcare institutions check the transparency of AI-assisted clinical decision support systems, before adoption and while in use.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="AI-CDSS Transparency Assessment Tool, home">
+        <span class="brand-mark" data-icon="shield"></span>
+        <span class="brand-text">
+          <span class="brand-name">AI-CDSS <span>Transparency</span></span>
+          <span class="brand-sub">Assessment Tool</span>
+        </span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">What it does</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="login.html?mode=register" aria-label="Start assessment"><span class="btn-label">Start assessment</span><span data-icon="arrowRight"></span></a>
+        <button class="menu-btn" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu" data-icon="menu"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">For healthcare institutions in Nigeria</p>
+          <h1>Know what you need to know about your <span>AI clinical decision support</span></h1>
+          <p class="hero-lead">A governance tool that helps hospitals check the transparency of an AI-assisted clinical decision support system, before they adopt it and while it is in use.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="login.html?mode=register">Start an assessment <span data-icon="arrowRight"></span></a>
+            <a class="btn btn-secondary" href="#how">See how it works</a>
+          </div>
+          <p class="hero-note"><span data-icon="lock"></span> No patient data is collected or stored.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-circle"></div>
+          <div class="mock-card">
+            <div class="mock-head">
+              <span class="mock-title">Transparency report</span>
+              <span class="mock-pill">Pre-adoption</span>
+            </div>
+            <div class="mock-row"><span class="dot" style="background:#0B6F4E"></span><span class="lbl">Intended use stated in writing</span><span class="tag badge-yes">Yes</span></div>
+            <div class="mock-row"><span class="dot" style="background:#B4231B"></span><span class="lbl">Training data described</span><span class="tag badge-no">Gap</span></div>
+            <div class="mock-row"><span class="dot" style="background:#D99A00"></span><span class="lbl">Tested in a similar setting</span><span class="tag badge-unknown">Unknown</span></div>
+            <div class="mock-row"><span class="dot" style="background:#0B6F4E"></span><span class="lbl">Clinicians can override</span><span class="tag badge-yes">Yes</span></div>
+            <div class="mock-score">
+              <div><strong>14</strong><span>Met</span></div>
+              <div><strong>6</strong><span>Gaps</span></div>
+              <div><strong>6</strong><span>Guidance</span></div>
+            </div>
+          </div>
+          <span class="float-badge fb-1" data-icon="stethoscope"></span>
+          <span class="float-badge fb-2" data-icon="eye"></span>
+          <span class="float-badge fb-3" data-icon="heart"></span>
+          <span class="float-badge fb-4" data-icon="clipboard"></span>
+          <div class="contact-strip"><span data-icon="refresh" style="width:18px;height:18px;color:#0B6F6A"></span><strong>Before adoption</strong> and <strong>while in use</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section section-white" id="about">
+      <div class="container about-grid">
+        <div class="about-panel">
+          <div class="stat-list">
+            <div class="stat"><span class="stat-icon" data-icon="file"></span><div><h3>Evidence-based</h3><p>Every question is drawn from published guidance, regulation or research.</p></div></div>
+            <div class="stat"><span class="stat-icon" data-icon="building"></span><div><h3>Built for institutions</h3><p>Written for hospitals adopting AI systems they did not develop.</p></div></div>
+            <div class="stat"><span class="stat-icon" data-icon="compass"></span><div><h3>Grounded in Nigeria</h3><p>Aligned with the Nigeria Data Protection Act and local institutional structures.</p></div></div>
+          </div>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About the framework</p>
+          <h2>A transparency-focused governance framework</h2>
+          <p class="lead">AI can support diagnosis and treatment decisions, but only if the people using it understand what it does, what it was tested on and where it can fail.</p>
+          <p>Most international guidance on AI in healthcare is written for developers and regulators in other countries. This tool turns that guidance into clear questions that a Nigerian healthcare institution can answer for itself.</p>
+          <p>Each <strong>No</strong> or <strong>I do not know</strong> answer is treated as a governance gap, and the tool explains what the institution can do to close it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">What the tool does</p>
+          <h2>Clear answers, practical next steps</h2>
+          <p>Designed for hospital managers, clinicians and committee members, with no specialist AI knowledge required.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card"><span class="stat-icon" data-icon="search"></span><h3>Structured assessment</h3><p>Answer plain-language questions about the AI-CDSS, its vendor and how it is used in your institution.</p></article>
+          <article class="card"><span class="stat-icon" data-icon="alert"></span><h3>Governance gaps</h3><p>See exactly where your institution lacks the information or processes it needs.</p></article>
+          <article class="card"><span class="stat-icon" data-icon="clipboard"></span><h3>Practical guidance</h3><p>Every gap comes with guidance on what to request from the vendor or put in place internally.</p></article>
+          <article class="card"><span class="stat-icon" data-icon="refresh"></span><h3>Before and during use</h3><p>Use it before adopting a system and repeat it while the system is in use.</p></article>
+          <article class="card"><span class="stat-icon" data-icon="printer"></span><h3>Shareable report</h3><p>View, print or download a report for management, committees or the vendor.</p></article>
+          <article class="card"><span class="stat-icon" data-icon="lock"></span><h3>Private by design</h3><p>No patient data is collected. Each user can only see their own assessments.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section section-white" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Four simple steps</h2>
+          <p>An assessment takes about 15 minutes.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><h3>Create an account</h3><p>Register with your email address so your assessments are saved.</p></div>
+          <div class="step"><span class="step-num">2</span><h3>Describe the system</h3><p>Enter the AI-CDSS name, vendor and intended use, and choose the stage.</p></div>
+          <div class="step"><span class="step-num">3</span><h3>Answer the questions</h3><p>Choose Yes, No or I do not know for each question.</p></div>
+          <div class="step"><span class="step-num">4</span><h3>Act on the report</h3><p>Review the governance gaps and the guidance for each one.</p></div>
+        </div>
+        <div class="answer-legend" aria-label="How answers are treated">
+          <span class="legend-item"><span class="badge badge-yes">Yes</span> No gap</span>
+          <span class="legend-item"><span class="badge badge-no">No</span> Governance gap</span>
+          <span class="legend-item"><span class="badge badge-unknown">I do not know</span> Governance gap</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <h2>Ready to assess an AI-CDSS?</h2>
+            <p>Create a free account and start your first assessment.</p>
+          </div>
+          <a class="btn btn-primary" href="login.html?mode=register">Start an assessment <span data-icon="arrowRight"></span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark" data-icon="shield"></span>
+            <span class="brand-text"><span class="brand-name">AI-CDSS Transparency</span><span class="brand-sub">Assessment Tool</span></span>
+          </a>
+          <p style="margin-top:14px;max-width:360px">A governance framework for the safe and responsible use of AI-assisted clinical decision support systems in Nigeria.</p>
+        </div>
+        <div>
+          <h4>Tool</h4>
+          <ul>
+            <li><a href="login.html?mode=register">Create an account</a></li>
+            <li><a href="login.html">Log in</a></li>
+            <li><a href="dashboard.html">My assessments</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Learn more</h4>
+          <ul>
+            <li><a href="#about">About the framework</a></li>
+            <li><a href="#features">What the tool does</a></li>
+            <li><a href="#how">How it works</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; <span data-year></span> AI-CDSS Transparency Assessment Tool. Developed as part of a Master of Information Technology project.</div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
